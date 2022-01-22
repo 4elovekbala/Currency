@@ -1,0 +1,38 @@
+.calendarWrapper {
+   position: relative;
+}
+
+.calendar {
+   max-width: 310px;
+   position: absolute;
+   left: -350px;
+   top: -200px;
+}
+
+.dateInfo {
+   color: #777;
+   text-align: right;
+}
+
+.calendarButton {
+   cursor: pointer;
+   max-width: 150px;
+   padding: 10px 0;
+   border-radius: 5px;
+   background-color: transparent;
+   text-align: center;
+   transition: background-color .2s linear;
+   border: 1px solid #cdcdcd;
+}
+
+.calendarButton:hover {
+   background-color: #16b67f;
+}
+
+.calendarIcon {
+   margin-left: 10px;
+}
+
+.adInfo{
+   color: #777;
+}

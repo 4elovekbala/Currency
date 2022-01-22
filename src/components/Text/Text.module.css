@@ -1,0 +1,43 @@
+.wrapper {
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+.input {
+   width: 310px;
+   height: 140px;
+   margin: 10px 0;
+   outline: none;
+   border: 1px solid #cdcdcd;
+   font-size: 36px;
+   font-weight: bold;
+   padding: 5px 15px;
+}
+
+.text {
+   position: absolute;
+   left: 15px;
+   bottom: 25px;
+   font-size: 12px;
+   color: #777;
+   text-transform: uppercase;
+}
+
+.text:last-child {
+   left: initial;
+   right: 15px;
+}
+
+.logo {
+   font-size: 36px;
+   transition: color .2s linear;
+}
+
+.logo:hover {
+   color: #cdcdcd;
+   cursor: pointer;
+}
