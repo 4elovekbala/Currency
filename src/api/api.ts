@@ -1,6 +1,6 @@
 import axios from "axios";
 import { IConvert } from "../store/Currency/CurrentReducer/CurrencyReducerActions";
-import { IGraph } from "../store/Graph/Graph";
+import { IGraph } from "../store/Graph/GraphActions";
 
 const instanse = axios.create({
   baseURL: 'https://api.exchangerate.host/'

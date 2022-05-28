@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { getLatest, getConvert } from '../../api/api';
+import { getLatest } from '../../api/api';
 import { CurrentReducerTypes, CurrentState, CurrentAction } from "./CurrentReducerActions"
 
 const SuccesAction = (data : CurrentState) : CurrentAction => {

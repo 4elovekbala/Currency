@@ -3,21 +3,16 @@ import css from './Graph.module.css';
 import { CartesianGrid, Line, LineChart, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import { useDispatch } from 'react-redux';
 import { useTypedSelector } from '../../hooks/hooks';
-import { fetchGraph } from '../../store/Graph/Graph';
+import { fetchGraph } from '../../store/Graph/GraphActionCreators';
+import { changeDateType } from '../../helpers/utils';
 
 const Graph : React.FunctionComponent = () => {
    //global state
    const { data } = useTypedSelector(state => state.graph);
    const {firstCurrency, secondCurrency} = useTypedSelector(state => state.currency);
    const dispatch = useDispatch();
-
-   const [select, setSelect] = useState<string>('30');
    
-   const changeDateType = (date : Date) => {
-      return `${date.getFullYear()}-${(date.getMonth() + 1) < 10 
-            ? "0" + (date.getMonth() + 1) 
-            : (date.getMonth() + 1)}-${date.getDate() - 1}`;
-   }
+   const [select, setSelect] = useState<string>('30');
 
    const changeHandler = (e : React.ChangeEvent<HTMLSelectElement>) => {
       setSelect(e.target.value);
